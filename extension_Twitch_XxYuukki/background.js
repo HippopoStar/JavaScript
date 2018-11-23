@@ -6,12 +6,12 @@ setInterval(function(){
 
 function checkStream(){
 	var xhr = new XMLHttpRequest();
-	xhr.open("GET", "https://api.twitch.tv/kraken/streams?user_id=97552678", true);
-	xhr.setRequestHeader("Client-ID: [...]");
+	xhr.open("GET", "https://api.twitch.tv/kraken/streams?user_login=xxyuukki", true);
+	xhr.setRequestHeader("Client-ID","[...]");
 	xhr.onreadystatechange = function(){
 		if (xhr.readyState == 4){
 			var data = JSON.parse(xhr.responseText);
-			if (data["data"] == []){
+			if (data["data"].length == 0){
 				chrome.browserAction.setIcon({path: "img/icon_red.png"})
 			}else{
 				chrome.browserAction.setIcon({path: "img/icon_green.png"})
