@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Extension Twitch XxYuukki",
+	"version": "1.0",
+	"description": "XxYuukki est-il actuellement en live ?",
+	"browser action": {
+		"default_popup": "index.html"
+	},
+	"icons": {
+		"64": "img/icon_green.png"
+	},
+	"background": {
+		"scripts": ["jquery.js", "background.js"]
+	}
+}
