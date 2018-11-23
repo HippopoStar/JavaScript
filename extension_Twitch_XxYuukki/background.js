@@ -6,7 +6,7 @@ setInterval(function(){
 
 function checkStream(){
 	var xhr = new XMLHttpRequest();
-	xhr.open("GET", "https://api.twitch.tv/kraken/streams?user_login=xxyuukki", true);
+	xhr.open("GET", "https://api.twitch.tv/helix/streams?user_login=xxyuukki", true);
 	xhr.setRequestHeader("Client-ID","[...]");
 	xhr.onreadystatechange = function(){
 		if (xhr.readyState == 4){
