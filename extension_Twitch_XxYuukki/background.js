@@ -18,5 +18,5 @@ function checkStream(){
 			}
 		}
 	}
+	xhr.send()
 }
-xhr.send();
