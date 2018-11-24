@@ -2,6 +2,9 @@
 Le dépôt des projets JavaScript !
 
 
+Telecharger l'extension : https://chrome.google.com/webstore/detail/extension-twitch-xxyuukki/ccedjdnikdnfjeoebfejcbmghbcpeppi
+
+
 Pour obtenir le `user_id` d'un utilisateur Twitch : `curl -H 'Client-ID: <votre identifiant client>' -X GET 'https://api.twitch.tv/helix/users?login=<nom de l'utilisateur>'`
 
 
